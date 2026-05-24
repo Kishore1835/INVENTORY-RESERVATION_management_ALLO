@@ -39,7 +39,7 @@ export default function ReservationPage() {
     async function fetchReservation() {
 
       const res = await fetch(
-        `http://localhost:3000/api/reservations/${id}`
+        `/api/reservations/${id}`
       )
 
       const data = await res.json()
@@ -80,7 +80,7 @@ export default function ReservationPage() {
         clearInterval(interval)
 
         fetch(
-          `http://localhost:3000/api/reservations/${id}/expire`,
+          `/api/reservations/${id}/expire`,
           {
             method: "POST"
           }
@@ -111,7 +111,7 @@ export default function ReservationPage() {
     try {
 
       const res = await fetch(
-        `http://localhost:3000/api/reservations/${id}/cancel`,
+        `/api/reservations/${id}/cancel`,
         {
           method: "POST"
         }
@@ -137,7 +137,7 @@ export default function ReservationPage() {
     try {
 
       const res = await fetch(
-        `http://localhost:3000/api/reservations/${id}/confirm`,
+        `/api/reservations/${id}/confirm`,
         {
           method: "POST"
         }

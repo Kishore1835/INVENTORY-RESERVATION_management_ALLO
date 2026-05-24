@@ -72,14 +72,14 @@ export default function Home() {
       try {
 
         const res = await fetch(
-          "http://localhost:3000/api/products"
+          "/api/products"
         )
 
         const data = await res.json()
 
         setProducts(data)
         const reservationRes = await fetch(
-            "http://localhost:3000/api/reservations"
+            "/api/reservations"
           )
 
           const reservationData =
@@ -109,7 +109,7 @@ export default function Home() {
     try {
 
       const res = await fetch(
-        "http://localhost:3000/api/reservations",
+        "/api/reservations",
         {
           method: "POST",
           headers: {

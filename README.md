@@ -63,7 +63,7 @@ A modern full-stack Inventory Reservation Platform built for the Allo Health Sof
 ## 1. Clone Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone <https://github.com/Kishore1835/INVENTORY-RESERVATION_management_ALLO>
 ```
 
 ---
